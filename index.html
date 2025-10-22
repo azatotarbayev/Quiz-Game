@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div id = "container">
             <!--START SCREEN-->
             <div class = "screen active" id = "start-screen">
                 <h1>Quiz Time!</h1>
@@ -31,7 +31,7 @@
                 </div>
 
                 <div id = "answers-container" class = "answers-container">
-                    <!-- ANswer buttons will be inserted from JavaScript-->
+                    <!-- Answer buttons will be inserted from JavaScript-->
                 </div>
 
                 <div class = "progress-bar">
@@ -40,8 +40,14 @@
             </div>
 
             <!--RESULT SCREEN-->
-            <div id = "result-screen">
+            <div id = "result-screen" class = "screen">
+                <h1>Quiz Results</h1>
+                <div class="result-info">
+                    <p>You scored <span id = "final-score">0</span>out of <span id = "max-score">5</span></p>
 
+                    <div id = "result-message">Good job!</div>
+                </div>
+                <button id = "restart-btn">Restart Quiz</button>
             </div>
         </div>
 

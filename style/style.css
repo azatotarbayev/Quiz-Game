@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #f5efe6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+#container
+{
+    border: 1px solid black; 
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+/*SCREENS*/
+.screen
+{
+    border: 1px solid red;
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+.screen.active
+{
+    display: block;
+}
